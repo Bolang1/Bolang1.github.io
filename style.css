@@ -1,62 +1,60 @@
-/* in case I didn't tell you yet - use this whenever you do anything */
-* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+body {
+    font-family: sans-serif;
+    background:white;
+    font-size: 10px;
+}
 
-/* 
+.wrapper {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
 
-This task doesn't require setting any widths and heights so don't. 
-You will never need any pixel values other than 10px.
-Well, all the exceptions to this are already written just below (width:960px and 100px)
+.menu {
+    width: 300px;
+    float: left;
+}
 
-Your job is to set some margins, paddings and floats (spoiler: and then you get in trouble :) )
+.menu>ul {
+    padding: 0;
+}
 
-Oh, and you don't need any more selectors here, but you can add some if you want.
+.menu>ul>li {
+    list-style-type: none;
+}
 
-DO:
-1. change the text color after you look at the HTML and the image you're reproducing
-2. uncomment the borders 
-3. do what you need to fit the outlines
-4. get in trouble with footer and solve the problem
+.menu>ul>li>a {
+    display: block;
+    border: 1px solid #000;
+    padding: 100px;
+    margin: 3px;
+    text-align: center;
+    color: #000;
+    font-size: 40px;
+}
 
-*/
+.informaion of bicycle {
+    background: transparent url("http://southsidewheelers.com/wp-content/uploads/2014/04/7.jpg") no-repeat center;
+    background-size: cover;
+    height:500px;
+    margin:0;
+    padding:0;
+}
 
-body{
-	/* change this to some color to see the text. ever heard of RGBA? */
-	color: white;
+.content {
+    padding: 20px;
+    margin-left: 300px;
+}
+
+.content img {
+    max-width: 400px;
+}
+.top{background: transparent url("http://www.hdwallpapera.com/wp-content/uploads/wallpaper/amazingpict/wallpapers-015//bicycle%20city%20photo.jpg") no-repeat center;
+    background-size: cover;
+    height:250px;
     
-  
 }
 
-div.wrapper {
-	width: 960px;
-	border: 2px dotted yellow;
-    margin:auto;
-    padding:10px;
-     
-
+.article img{
+    float:right;
 }
-
-
-div.content {
-    padding:10px;
-    margin-left: 120px;
-    background-color: blueviolet;
-     
-}
-
-div.sidebar {
-	width: 100px;
-	border: 2px dotted yellow;
-    margin:50px 0;
-    float:left;
-   
-}
-
-
-header, footer {
-	border: 2px dotted yellow;
-    padding:15px;
-    clear:both;
-
-
-}
-
